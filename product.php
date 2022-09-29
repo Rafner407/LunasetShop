@@ -13,7 +13,7 @@
     <div class="search-box">
         <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"></i>
         <i class="fa-solid fa-times" id="close-btn" onclick="closemenu()"></i>
-        <a href="index.html"><img src="imagens/logo.png" class="logo" height="100px" width="100px"></a>
+        <a href="index.php"><img src="imagens/logo.png" class="logo" height="100px" width="100px"></a>
         <input type="text" class="form-control">
         <span class="input-group-text"><i class="fa fa-search"></i></span>
     </div>

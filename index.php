@@ -139,16 +139,16 @@
             <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <a href="product.html"><img src="imagens/fundoCinza.jpg" class="d-block w-100" height="766px">
+                    <a href="product.php"><img src="imagens/fundoCinza.jpg" class="d-block w-100" height="766px">
                   </div>
                   <div class="carousel-item">
-                    <a href="product.html"><img src="imagens/fundoRosa.jpg" class="d-block w-100" height="766px">
+                    <a href="product.php"><img src="imagens/fundoRosa.jpg" class="d-block w-100" height="766px">
                   </div>
                   <div class="carousel-item">
-                    <a href="product.html"><img src="imagens/fundoLaranja.jpg" class="d-block w-100" height="766px">
+                    <a href="product.php"><img src="imagens/fundoLaranja.jpg" class="d-block w-100" height="766px">
                   </div>
                   <div class="carousel-item">
-                    <a href="product.html"><img src="imagens/fundoVermelho.jpg" class="d-block w-100" height="766px">
+                    <a href="product.php"><img src="imagens/fundoVermelho.jpg" class="d-block w-100" height="766px">
                   </div>
                 </div>
                 <div class="carousel-indicators">
@@ -166,13 +166,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <a href="product.html"><img src="imagens/fundoCinza.jpg"></a>
+                    <a href="product.php"><img src="imagens/fundoCinza.jpg"></a>
                 </div>
                 <div class="col-md-4">
-                    <a href="product.html"><img src="imagens/fundoRosa.jpg"></a>
+                    <a href="product.php"><img src="imagens/fundoRosa.jpg"></a>
                 </div>
                 <div class="col-md-4">
-                    <a href="product.html"><img src="imagens/fundoLaranja.jpg"></a>
+                    <a href="product.php"><img src="imagens/fundoLaranja.jpg"></a>
                 </div>
             </div>
         </div>
@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -210,7 +210,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -293,7 +293,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -318,7 +318,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -342,7 +342,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -367,7 +367,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -392,7 +392,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -417,7 +417,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -441,7 +441,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -466,7 +466,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="product.html"><img src="imagens/fundoVermelho.jpg"></a>
+                        <a href="product.php"><img src="imagens/fundoVermelho.jpg"></a>
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-eye"></i>
@@ -498,25 +498,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 feature-box">
-                    <a href="product.html"><img src="imagens/100.png"></a>
+                    <a href="product.php"><img src="imagens/100.png"></a>
                     <div class="feature-text">
                         <p><b>Itens 100% originais</b> disponíveis na loja!</p>
                     </div>
                 </div>
                 <div class="col-md-3 feature-box">
-                    <a href="product.html"><img src="imagens/entrega.png"></a>
+                    <a href="product.php"><img src="imagens/entrega.png"></a>
                     <div class="feature-text">
                         <p><b>Garantia de entrega</b> para todos!</p>
                     </div>
                 </div>
                 <div class="col-md-3 feature-box">
-                    <a href="product.html"><img src="imagens/pagamento.png"></a>
+                    <a href="product.php"><img src="imagens/pagamento.png"></a>
                     <div class="feature-text">
                         <p><b>Pagamento efetuado</b> no método de sua preferência!</p>
                     </div>
                 </div>
                 <div class="col-md-3 feature-box">
-                    <a href="product.html"><img src="imagens/devolva.png"></a>
+                    <a href="product.php"><img src="imagens/devolva.png"></a>
                     <div class="feature-text">
                         <p><b>Garantia de produto</b> para até 30 dias!</p>
                     </div>
@@ -552,7 +552,7 @@
                 </div>
                 <div class="col-md-3 footer-image">
                     <h1>Baixe o aplicativo</h1>
-                    <a href="product.html"><img src="imagens/download.png"></a>
+                    <a href="product.php"><img src="imagens/download.png"></a>
                 </div>
             </div>
             <hr>
@@ -577,4 +577,4 @@
 
 </body>
 
-</html>
+    </html>
