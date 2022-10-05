@@ -36,6 +36,7 @@
     </div>
     </div>
 
+    <!-- header -->
     <section class="header">
         <div class="side-menu" id="side-menu">
             <ul>
