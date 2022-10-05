@@ -4,7 +4,7 @@
     
     if(!isset($_SESSION["username"]))
     {
-        header("location:../login.php");
+        header("location:login.php");
     }
 
     $s="select * from login where id='$_SESSION[id]'";
