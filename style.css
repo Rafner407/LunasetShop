@@ -367,3 +367,5 @@ body{
 .product-description hr{
     margin-bottom: 50px;
 }
+
+#success_message{ display: none;}

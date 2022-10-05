@@ -1,22 +1,56 @@
 <?php
 
-include'connect.php';
+$host="localhost";
+$user="root";
+$password="";
+$db="lunasettcc";
 
-if(isset($_POST['sub'])){
-    $u=$_POST['user'];
-    $p=$_POST['pass'];
-    $s= "select * from reg where username='$u' and password= '$p'";   
-   $qu= mysqli_query($con, $s);
-   if(mysqli_num_rows($qu)>0){
-      $f= mysqli_fetch_assoc($qu);
-      $_SESSION['id']=$f['id'];
-      header ('location:index.php');
-   }
-   else{
-       echo 'Nome de usuário ou senha não existem';
-   }
-  
+session_start();
+
+$data=mysqli_connect($host,$user,$password,$db);
+
+if($data===false)
+{
+	die("connection error");
 }
+
+
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+	$username=$_POST["username"];
+	$password=$_POST["password"];
+
+	$sql="select * from login where username='".$username."' AND password='".$password."' ";
+
+	$result=mysqli_query($data,$sql);
+
+	$row=mysqli_fetch_array($result);
+
+	if($row["usertype"]=="user")
+	{	
+
+		$_SESSION["username"]=$username;
+
+		header("location:index.php");
+	}
+
+	elseif($row["usertype"]=="admin")
+	{
+
+		$_SESSION["username"]=$username;
+
+		header("location:indexAdmin.php");
+	}
+
+	else
+	{
+		echo "username or password incorrect";
+	}
+}
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -38,16 +72,16 @@ if(isset($_POST['sub'])){
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <b>LUNASET</b>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Faça login para iniciar a sessão</p>
 
-      <form method="POST" enctype="multipart/form-data">
+      <form action="#" method="POST">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Name" name="user">
+          <input type="text" class="form-control" placeholder="Usuário" name="username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -55,7 +89,7 @@ if(isset($_POST['sub'])){
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" name="pass" class="form-control" placeholder="Password">
+          <input type="password" name="password" class="form-control" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -63,14 +97,6 @@ if(isset($_POST['sub'])){
           </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
-          </div>
           <!-- /.col -->
           <div class="col-4">
             <button name="sub" type="submit" class="btn btn-primary btn-block" value="Login">Sign In</button>
@@ -78,23 +104,9 @@ if(isset($_POST['sub'])){
           <!-- /.col -->
         </div>
       </form>
-
-      <div class="social-auth-links text-center mb-3">
-        <p>- OR -</p>
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-        </a>
-      </div>
       <!-- /.social-auth-links -->
-
-      <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
-      </p>
       <p class="mb-0">
-        <a href="reg.php" class="text-center">Register a new membership</a>
+        <a href="reg.php" class="text-center">Register uma nova conta</a>
       </p>
     </div>
     <!-- /.login-card-body -->

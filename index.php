@@ -2,7 +2,12 @@
     include 'connect.php';
     include 'checklogin.php';
     
-    $s="select * from reg where id='$_SESSION[id]'";
+    if(!isset($_SESSION["username"]))
+    {
+        header("location:login.php");
+    }
+
+    $s="select * from login where id='$_SESSION[id]'";
     $qu= mysqli_query($con, $s);
     $f=mysqli_fetch_assoc($qu);
     
@@ -40,111 +45,39 @@
     <section class="header">
         <div class="side-menu" id="side-menu">
             <ul>
-                <li>À venda<i class="fa-solid fa-angle-right"></i>
+                <li>Medicamentos<i class="fa-solid fa-angle-right"></i>
                     <ul>
                         <li>Sub Menu-1</li>
                         <li>Sub Menu-1</li>
                         <li>Sub Menu-1</li>
                         <li>Sub Menu-1</li>
-                    </ul>
-                </li>
-                <li>Mobile<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-2</li>
-                        <li>Sub Menu-2</li>
-                        <li>Sub Menu-2</li>
-                        <li>Sub Menu-2</li>
-                    </ul>
-                </li>
-                <li>Computador<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-3</li>
-                        <li>Sub Menu-3</li>
-                        <li>Sub Menu-3</li>
-                        <li>Sub Menu-3</li>
-                    </ul>
-                </li>
-                <li>Livros<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-4</li>
-                        <li>Sub Menu-4</li>
-                        <li>Sub Menu-4</li>
-                        <li>Sub Menu-4</li>
-                    </ul>
-                </li>
-                <li>Fitness<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-5</li>
-                        <li>Sub Menu-5</li>
-                        <li>Sub Menu-5</li>
-                        <li>Sub Menu-5</li>
                     </ul>
                 </li>
                 <li>Infantil<i class="fa-solid fa-angle-right"></i>
                     <ul>
-                        <li>Sub Menu-6</li>
-                        <li>Sub Menu-6</li>
-                        <li>Sub Menu-6</li>
-                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
                     </ul>
                 </li>
-                <li>Revistas<i class="fa-solid fa-angle-right"></i>
+                <li>Higiene e cuidados<i class="fa-solid fa-angle-right"></i>
                     <ul>
-                        <li>Sub Menu-7</li>
-                        <li>Sub Menu-7</li>
-                        <li>Sub Menu-7</li>
-                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
                     </ul>
                 </li>
-                <li>Acessórios<i class="fa-solid fa-angle-right"></i>
+                <li>Vitaminas<i class="fa-solid fa-angle-right"></i>
                     <ul>
-                        <li>Sub Menu-8</li>
-                        <li>Sub Menu-8</li>
-                        <li>Sub Menu-8</li>
-                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
                     </ul>
                 </li>
-                <li>Filmes e música<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-9</li>
-                        <li>Sub Menu-9</li>
-                        <li>Sub Menu-9</li>
-                        <li>Sub Menu-9</li>
-                    </ul>
-                </li>
-                <li>Jogos<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-10</li>
-                        <li>Sub Menu-10</li>
-                        <li>Sub Menu-10</li>
-                        <li>Sub Menu-10</li>
-                    </ul>
-                </li>
-                <li>Casa<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-11</li>
-                        <li>Sub Menu-11</li>
-                        <li>Sub Menu-11</li>
-                        <li>Sub Menu-11</li>
-                    </ul>
-                </li>
-                <li>Móveis<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-12</li>
-                        <li>Sub Menu-12</li>
-                        <li>Sub Menu-12</li>
-                        <li>Sub Menu-12</li>
-                    </ul>
-                </li>
-                <li>Mercado<i class="fa-solid fa-angle-right"></i>
-                    <ul>
-                        <li>Sub Menu-13</li>
-                        <li>Sub Menu-13</li>
-                        <li>Sub Menu-13</li>
-                        <li>Sub Menu-13</li>
-                    </ul>
-                </li>
-            </ul>
+            </ul>    
         </div>
         <div class="slider">
             <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
